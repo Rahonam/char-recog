@@ -1,0 +1,13 @@
+<div class="main-container">
+    <form [formGroup]="imageForm" (ngSubmit)="onSubmit()">
+        <img [src]="imageUrl" alt="preview" class="preview-img">
+        <input type="file" accept="image/*" (change)="onFileSelected($event)">
+        <button type="submit" mat-raised-button color="primary">UPLOAD AND PROCESS</button>
+    </form>  
+    <div class="result">
+        {{parsedText}}
+    </div>
+</div>
+<footer>
+    <button type="button" mat-flat-button (click)="logout()">LOGOUT</button>
+</footer>

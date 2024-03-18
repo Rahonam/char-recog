@@ -1,0 +1,17 @@
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.preview-img {
+    align-self: center;
+    width: 30em;
+    max-width: 90%;
+}

@@ -1,0 +1,18 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <header>
+        <h2>LOGIN</h2>
+    </header>
+    <mat-form-field appearance="fill">
+      <mat-label>Username</mat-label>
+      <input matInput formControlName="username" placeholder="Enter your username">
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password" placeholder="Enter your password">
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit">LOGIN</button>
+    <br>
+    <a [routerLink]="['/auth/signup']">Signup</a>
+</form>
